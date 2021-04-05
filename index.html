@@ -1,128 +1,181 @@
 <!DOCTYPE html>
 <html>
-<title>Stephanie.fans</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+  <title>Stephanie.fans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="blogstyle.css">
+  
+   <script src="blogfilter.js"></script>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <body>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close, Bitch</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button"Gallery</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16"> login</div>
-	<div class="w3-right w3-padding-16">commerce | </div>
-    <div class="w3-center w3-padding-16">Stephanie.fans</div>
-  </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="doc.html">Stephanie.fans</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+      <li><a href=http://www.instagram.com><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg></a></li>
+    </ul>
+        </div>
+    </nav>
+<div class="space4"></div>
+
+<div class="bottom">
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Steph Blog</h4>
+      <div class="buttonbro">
+      <div class="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('tits')"> tits boobs</button>
+  <button class="btn" onclick="filterSelection('ass')"> my butt</button>
+  <button class="btn" onclick="filterSelection('pussy')"> pussy</button>
+  <button class="btn" onclick="filterSelection('thoughts')"> life and lust</button>
 </div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/melon.webp" alt="Cherries" style="width:100%">
-      <h3>steph</h3>
-      <p>just kidding</p>
-      <p>What else?</p>
-    </div>
-  
-  <!-- Second Photo Grid-->
-
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Of course, music is allowed.</p>
+</div>
     </div>
 
-  <!-- Pagination --
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <hr id="about">>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About Me</h3><br>
-    <img src="/melon.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>loves to suck lol</b></h4>
-      <h6><i></i></h6>
-      <p></p>
-    </div>
-  </div>
-  <hr>
-  
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Here is a place to present text so fine and eloquent.</p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Quandries & Pontifications</span><br>
-          <span>On large boats</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>hahah</span>
-        </li> 
-      </ul>
-    </div>
+    <div class="col-sm-9">
+      <div class="container">
+  <div class="filterDiv ass pussy"><h4><small>PORN</small></h4>
+      <hr>
+      <h2>We are gonna fuck some people.</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Stephhhh, April 4, 2021. </h5>
+      <h5><span class="label label-success">ass</span> <span class="label label-success">pussy</span></h5>
+      <p>IT'S JUST ABOUT ADVENTURE. Other people, domination, skin and fun. Served only by going out and doing things.</p>
+      <div class="havefun">
 
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
-    </div>
-  </footer>
+        <ul class="list-inline">
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/1"><br>
+Caption</a></li>
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/2"><br>
+Caption</a></li>
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/3"><br>
+Caption</a></li>
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/4"><br>
+Caption</a></li>
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/5"><br>
+Caption</a></li>
+  <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5"><img class="img-thumbnail" src="https://placeimg.com/200/133/nature/6"><br>
+Caption</a></li>
+<!--end of thumbnails-->
+</ul>
 
-<!-- End page content -->q
+<!--begin modal window-->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<div class="pull-left">TODAY'S NUDES</div>
+
+<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+</div>
+<div class="modal-body">
+
+
+
+<!--CAROUSEL CODE GOES HERE-->
+<!--begin carousel-->
+<div id="myGallery" class="carousel slide" data-interval="false">
+<div class="carousel-inner">
+<div class="item active"> <img src="https://placeimg.com/600/400/nature/1" alt="item0">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 0  description.</p>
+</div>
+</div>
+<div class="item"> <img src="https://placeimg.com/600/400/nature/2" alt="item1">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 1 description.</p>
+</div>
+</div>
+<div class="item"> <img src="https://placeimg.com/600/400/nature/3" alt="item2">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 2  description.</p>
+</div>
+</div>
+<div class="item"> <img src="https://placeimg.com/600/400/nature/4" alt="item3">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 3 description.</p>
+</div>
+</div>
+<div class="item"> <img src="https://placeimg.com/600/400/nature/5" alt="item4">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 4 description.</p>
+</div>
+</div>
+<div class="item"> <img src="https://placeimg.com/600/400/nature/6" alt="item5">
+<div class="carousel-caption">
+<h3>Heading 3</h3>
+<p>Slide 5 description.</p>
+</div>
+</div>
+<!--end carousel-inner--></div>
+<!--Begin Previous and Next buttons-->
+<a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+<!--end carousel--></div>
+
+<!--end modal-body--></div>
+<div class="modal-footer">
+<div class="pull-left">
+<small>like me? send me love<a href=https://www.instagram.com target="new"> or buy me... < 3 heres my insta now | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg></a></small>
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
+<!--end modal-footer--></div>
+<!--end modal-content--></div>
+<!--end modal-dialoge--></div>
+<!--end myModal-->></div>
+
+      </div>
+    </div>
+  <!-- <div class="filterDiv thoughts ass pussy"><h4><small>PORN</small></h4>
+      <hr>
+      <h2>titLE</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Stephhhh, April 4, 2021. </h5>
+      <h5><span class="label label-success">u know?</span></h5><br>
+      <p>ADVENTURE. people, domination, skin</p></div> 
+        -->
  
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+</div>
+
+</div>
+        
+</div>
+</div>
+
+<div class="comment-section">
+  <hr>
+       <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%249H73dD89nX7ysSrpl6TBv."+"&opts=16862&num=10&ts=1617591364834");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+      
+    </div>
+    
+  </div>
+
+
+<div class="container-fluid">
+  more website coming soon
+</div>
 
 </body>
 </html>
